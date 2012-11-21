@@ -1,6 +1,12 @@
-%h1 Get Reward from invites
 %p
   - if user_signed_in?
+    - if @inviter
+      %p
+        Your payments will reward
+        %h3
+          = @inviter.email
+      %hr
+    %p Get Reward from invites
     = link_to 'Invite', new_user_invitation_path
   - else
     = link_to 'Register', new_user_registration_path

@@ -21,3 +21,7 @@ gem "bootstrap-sass", ">= 2.1.1.0"
 gem "devise", ">= 2.1.2"
 gem "devise_invitable", ">= 1.1.1"
 gem "quiet_assets", ">= 1.0.1", :group => :development
+
+group :development do
+  gem 'letter_opener'
+end
